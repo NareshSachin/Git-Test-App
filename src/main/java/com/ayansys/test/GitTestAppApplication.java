@@ -12,7 +12,7 @@ public class GitTestAppApplication {
 
 	@PostMapping("/purchase/{username}/{amount}/{productName}")
 	public String purchase(@RequestBody Order order) {
-		
+		System.out.println("From purchase() method");
 		return "Hi "+order.getUserName()+" order for "+order.getProductName()+" with amount "+order.getAmount()+" stored successfully..";
 
 	}
