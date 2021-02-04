@@ -18,6 +18,7 @@ public class GitTestAppApplication {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println("Main execution started");
 		SpringApplication.run(GitTestAppApplication.class, args);
 	}
 
